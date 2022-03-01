@@ -1,0 +1,805 @@
+<html dir="ltr" class="cufon-active cufon-ready"><!--<![endif]--><head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=1024,maximum-scale=1.0">
+<title>- Gerilla TV</title>
+<meta http-equiv="X-UA-Compatible" content="IE=9; IE=8; IE=7; IE=edge,chrome=1">
+<meta name="title" content="- Gerilla TV">
+<meta name="keywords" content="">
+<meta name="description" content="- Gerilla TV">
+<link rel="shortcut icon" href="templates/ruby/img/favicon.ico">
+<link rel="alternate" type="application/rss+xml" title="- Gerilla TV" href="rss.php?feed=topvideos">
+<!--[if lt IE 9]>
+<script src="https://www.gerillatv.org/jwplayer/jwplayer7/jwplayer.js"></script>
+<script>jwplayer.key="ABCdeFG123456SeVenABCdeFG123456SeVen==";</script>
+include_once "home/gerillatv/public_html//Parezvan/config.php";
+include_once "home/gerillatv/public_html/Parezvan/project-security.php";
+                
+<script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+<link rel="stylesheet" type="text/css" media="screen" href="templates/ruby/css/bootstrap.min.css">
+<!--[if lt IE 9]>
+<script src="//css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+<![endif]-->
+<link rel="stylesheet" type="text/css" media="screen" href="templates/ruby/css/new-style.css">
+<link rel="stylesheet" type="text/css" media="screen" href="templates/ruby/css/styleslider.css">
+<script src="templates/ruby/js/cufon-yui.js" type="text/javascript"></script><style type="text/css">cufon{text-indent:0!important;}@media screen,projection{cufon{display:inline!important;display:inline-block!important;position:relative!important;vertical-align:middle!important;font-size:1px!important;line-height:1px!important;}cufon cufontext{display:-moz-inline-box!important;display:inline-block!important;width:0!important;height:0!important;overflow:hidden!important;text-indent:-10000in!important;}cufon canvas{position:relative!important;}}@media print{cufon{padding:0!important;}cufon canvas{display:none!important;}}</style>
+<script type="text/javascript">
+			Cufon('.cn_wrapper h1,h2', {
+				textShadow: '-1px 1px black'
+			});
+		</script>
+<link rel="stylesheet" type="text/css" media="screen" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+<link href="//fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700&amp;subset=latin,latin-ext" rel="stylesheet" type="text/css">
+<!--[if IE]>
+
+<link rel="stylesheet" type="text/css" media="screen" href="templates/ruby/css/new-style-ie.css">
+
+<link href="//fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" type="text/css">
+<link href="//fonts.googleapis.com/css?family=Open+Sans:400italic" rel="stylesheet" type="text/css">
+<link href="//fonts.googleapis.com/css?family=Open+Sans:700" rel="stylesheet" type="text/css">
+<link href="//fonts.googleapis.com/css?family=Open+Sans:700italic" rel="stylesheet" type="text/css">
+<![endif]-->
+<link href="//fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+<script type="text/javascript">
+var MELODYURL = "https://gerilatv.com";
+var MELODYURL2 = "https://gerilatv.com";
+var TemplateP = "templates/ruby";
+var _LOGGEDIN_ =  false ;
+ 
+</script>
+<script type="text/javascript">
+ var pm_lang = {
+	lights_off: "Ronahiyan bigire",
+	lights_on: "Ronahiyan veke",
+	validate_name: "Ji kerema xwe navekî binivîsin",
+	validate_username: "Navekî bikarhînerê binivîsin",
+	validate_pass: "Şîfreyekî binivîsin",
+	validate_captcha: "Qoda sererastkirinê binivîsin",
+	validate_email: "Navnîşanekî e-postayê a derbasdar binivîsin",
+	validate_agree: "Rêzikan bipejirînin.",
+	validate_name_long: "Divê ku navê we herî kên ji 2 tîpan pêk were",
+	validate_username_long: "Divê ku navê we yê bikarhînerê herî kêm ji 2 tîpan pêk were",
+	validate_pass_long: "Divê ku şîfreya we herî kên ji 5 tîpan pêk were",
+	validate_confirm_pass_long: "Wekî li jorê heman şîfreyê binivîsin",
+	choose_category: "Beş hilbijêre",
+	validate_select_file: "Tu hevnivîs nehat hilbijartin.",
+	validate_video_title: "Ji bo vê vîdeoyê sernivîsekî binivîsin",
+	please_wait: "Loading...",
+	// upload video page
+	swfupload_status_uploaded: "Uploaded",
+	swfupload_status_pending: "Continue with the rest of the form.",
+	swfupload_status_queued: "Queued",
+	swfupload_status_uploading: "Uploading...",
+	swfupload_file: "File",
+	swfupload_btn_select: "Select",
+	swfupload_btn_cancel: "Cancel",
+	swfupload_status_error: "Error",
+	swfupload_error_oversize: "Size of the selected file(s) is greater than allowed limit",
+	swfupload_friendly_maxsize: "",
+	upload_errmsg2: "Cureyê dosyayê ne derbasdar.",
+	// playlist
+	playlist_delete_confirm: "Are you sure you want to permanently delete this playlist?\n\nClick 'Cancel' to stop, 'OK' to delete.",
+	playlist_delete_item_confirm: "You are about to remove this video from your playlist.\n\nClick 'Cancel' to stop, 'OK' to delete.",
+	show_more: "Hîn zêdetir nîşan bide",
+	show_less: "Show less",
+	delete_video_confirmation: "Are you sure you want to delete this video?",
+	browse_all: "Browse All",
+	upload_error_unknown: "Unknown error occured"
+ }
+</script>
+<script type="text/javascript" src="js/swfobject.js"></script>
+</head>
+<body>
+<div id="container">
+<header class="wide-header" id="overview">
+<div class="row-fluid fixed960">
+<div class="span9">
+<div class="pm-logo-image">
+<a href="index.html" rel="home"><img src="//www.gerilatv.com/uploads/custom-logo.png" alt="Gerilla TV" title="Gerilla TV" border="0"></a>
+</div>
+</div>
+<div class="span3 hidden-phone">
+<div id="user-pane" class="border-radius4">
+<div class="user-data">
+<span class="user-avatar">
+<img src="templates/ruby/img/pm-avatar.png" width="40" height="40" alt="">
+<span class="greet-links">
+<div class="ellipsis"><strong>Hûn bi xêr hatin</strong></div>
+<span class="avatar-img"><a class="primary ajax-modal" data-toggle="modal" data-backdrop="true" data-keyboard="true" href="#header-login-form">Bikeve Hesabê</a>
+</span>
+</span>
+</span></div>
+
+<div class="modal modal-narrow hide" id="header-login-form" role="dialog" aria-labelledby="header-login-form-label"> 
+<div class="modal-header">
+<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+<h3 id="header-login-form-label">Bikeve Hesabê</h3>
+</div>
+<div class="modal-body">
+<p></p>
+<form class="form-vertical" name="login_form" id="login-form" method="post" action="login.php">
+<fieldset>
+<div class="control-group">
+<label class="control-label" for="username"></label>
+<div class="controls"><input type="text" class="hocusfocus input-large" id="hocusfocus" name="username" value=""></div>
+</div>
+<div class="control-group">
+<label class="control-label" for="pass">Şîfre</label>
+<div class="controls"><input type="password" class="input-large" id="pass" name="pass" maxlength="32" autocomplete="off"></div>
+</div>
+<div class="">
+<div class="controls">
+<button type="submit" name="Login" value="Bikeve Hesabê" class="btn btn-blue" data-loading-text="Bikeve Hesabê">Bikeve Hesabê</button>
+<span class="signup"><small><a href="login.html?do=forgot_pass">Min şîfreya xwe ji bîr kir?</a></small></span>
+</div>
+</div>
+</fieldset>
+</form> </div>
+</div>
+<div class="modal modal-narrow hide" id="header-register-form" role="dialog" aria-labelledby="header-register-form-label"> 
+<div class="modal-header">
+<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+<h3 id="header-register-form-label">Hêsab avabike</h3>
+</div>
+<div class="modal-body">
+<p></p>
+<div class="pm-social-accounts">
+<p>Register with your social account</p>
+</div>
+<div class="clearfix"></div>
+<hr>
+<a href="register.html" class="btn btn-register-email">Register with E-mail</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</header>
+<nav class="wide-nav">
+<div class="row-fluid fixed960">
+<span class="span9">
+<div class="navbar">
+<div class="navbar-inner">
+<div class="container">
+<a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+</a>
+<div class="nav-collapse">
+<ul class="nav">
+<li><a href="index.html">Mal</a></li>
+<li class="dropdown">
+<a href="browse.html" class="dropdown-toggle disabled" role="button" data-target="#" data-toggle="dropdown">Beş <b class="caret"></b></a>
+<ul class="dropdown-menu">
+<li class=""><a href="browse-categorytwo-videos-1-date.html" class="">Rêber APO</a></li>
+<li class=""><a href="browse-categoryone-videos-1-date.html" class="">Şehîdên Me</a></li>
+<li class=""><a href="browse-categorythree-videos-1-date.html" class="">HPG</a></li>
+<li class=""><a href="browse-categorysix-videos-1-date.html" class="">Çalakî</a></li>
+<li class=""><a href="browse-categoryfour-videos-1-date.html" class="">Gerîla</a></li>
+<li class=""><a href="browse-categoryfive-videos-1-date.html" class="">Serhildan</a></li>
+<li class=""><a href="browse-categoryseven-videos-1-date.html" class="">Helbest</a></li>
+<li class=""><a href="browse-categoryeight-videos-1-date.html" class="">Stran</a></li>
+<li class=""><a href="browse-categorynine-videos-1-date.html" class="">Taybet</a></li>
+<li class=""><a href="browse-categoryten-videos-1-date.html" class="">Giştî</a></li>
+</ul>
+</li>
+<li><a href="topvideos.html">Navdar</a></li>
+<li><a href="newvideos.html">VİDEOYÊN NÛ</a></li>
+<li><a href="randomizer.php" rel="nofollow">Temaşe Bike</a></li>
+<li class="dropdown">
+<a href="#" class="dropdown-toggle wide-nav-link" data-toggle="dropdown"> <b class="caret"></b></a>
+<ul class="dropdown-menu">
+</ul>
+</li>
+<li><a href="contact_us.html">Peywendî</a></li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</span>
+<span class="span3">
+<div class="pm-search">
+<form action="search.php" method="get" id="search" name="search" onsubmit="return validateSearch('true');">
+<div class="controls">
+<div class="input-append">
+<input class="input-medium inp-small" id="appendedInputButton" size="16" name="keywords" type="text" placeholder="Bigere" x-webkit-speech="x-webkit-speech" onwebkitspeechchange="this.form.submit();">
+<input id="pm-video-id" size="16" name="video-id" type="hidden">
+<button class="btn btn-blue" type="submit"><i class="icon-search"></i></button>
+</div>
+<div class="suggestionsBox" id="suggestions" style="display: none;">
+<ul class="suggestionList input-xlarge" id="autoSuggestionsList"></ul>
+</div>
+</div>
+</form>
+</div>
+</span>
+</div>
+</nav>
+<a id="top"></a>
+<div id="wrapper">
+<div class="container-fluid">
+<div class="row-fluid">
+<div class="span3" id="left">
+<div class="widget">
+<h4>Beş</h4>
+<ul class="pm-browse-ul-subcats">
+<li class=""><a href="browse-categorytwo-videos-1-date.html" class="">Rêber APO</a></li>
+<li class=""><a href="browse-categoryone-videos-1-date.html" class="">Şehîdên Me</a></li>
+<li class=""><a href="browse-categorythree-videos-1-date.html" class="">HPG</a></li>
+<li class=""><a href="browse-categorysix-videos-1-date.html" class="">Çalakî</a></li>
+<li class=""><a href="browse-categoryfour-videos-1-date.html" class="">Gerîla</a></li>
+<li class=""><a href="browse-categoryfive-videos-1-date.html" class="">Serhildan</a></li>
+<li class=""><a href="browse-categoryseven-videos-1-date.html" class="">Helbest</a></li>
+<li class=""><a href="browse-categoryeight-videos-1-date.html" class="">Stran</a></li>
+<li class=""><a href="browse-categorynine-videos-1-date.html" class="">Taybet</a></li>
+<li class=""><a href="browse-categoryten-videos-1-date.html" class="">Giştî</a></li>
+</ul>
+</div>
+</div>
+<div class="span9" id="right">
+<div id="primary" class="primary-content">
+<h1 class="entry-title">Yên ku herî zêde hatine temaşe kirin</h1>
+<form class="form-inline li-dropdown-out opac7">
+Rêz kirin:
+<select name="categories" size="1" class="inp-small" onchange="javascript:document.location=this.value;">
+<option value="topvideos.html">Hilbijêrin</option>
+<optgroup label="Yên ku pir hatine ecibandin">
+<option value="topvideos.html?do=rating">Hemu Dem</option>
+</optgroup>
+<optgroup label="Zeman">
+<option value="topvideos.html">Hemu Dem</option>
+<option value="topvideos.html?do=recent">
+Dawî 7 Roj
+</option>
+</optgroup>
+<optgroup label="Beş">
+<option value="topvideos.html?c=categorytwo"> Rêber APO</option>
+<option value="topvideos.html?c=categoryone"> Şehîdên Me</option>
+<option value="topvideos.html?c=categorythree"> HPG</option>
+<option value="topvideos.html?c=categorysix"> Çalakî</option>
+<option value="topvideos.html?c=categoryfour"> Gerîla</option>
+<option value="topvideos.html?c=categoryfive"> Serhildan</option>
+<option value="topvideos.html?c=categoryseven"> Helbest</option>
+<option value="topvideos.html?c=categoryeight"> Stran</option>
+<option value="topvideos.html?c=categorynine"> Taybet</option>
+<option value="topvideos.html?c=categoryten"> Giştî</option>
+</optgroup>
+</select>
+</form>
+<hr>
+<ul class="pm-ul-alltop-videos thumbnails" id="pm-grid">
+<li>
+<div class="pm-li-video">
+<span class="pm-video-thumb pm-thumb-185 pm-thumb border-radius2">
+<span class="pm-video-rank">1</span>
+<span class="pm-video-li-thumb-info">
+<span class="label label-pop">Navdar</span> </span>
+<a href="calakiya-aqir-sert-perwari-5e-tirmehe-2019_927cb5a37.html" class="pm-thumb-fix pm-thumb-185"><span class="pm-thumb-fix-clip"><img src="uploads/thumbs/927cb5a37-1.jpg" alt="Çalakiya Aqîr - Sêrt, Perwari- 5'ê Tîrmehê 2019" width="194"><span class="vertical-align"></span></span></a>
+</span>
+<h3 dir="ltr"><a href="calakiya-aqir-sert-perwari-5e-tirmehe-2019_927cb5a37.html" class="pm-title-link" title="Çalakiya Aqîr - Sêrt, Perwari- 5'ê Tîrmehê 2019">Çalakiya Aqîr - Sêrt, Perwari- 5'ê Tîrmehê 2019</a></h3>
+<div class="pm-video-attr">
+<span class="pm-video-attr-since">Dîroka Bar kirinê <time datetime="2019-10-06T11:19:12+0000" title="Sunday, October 6, 2019 11:19 AM">1 sal Berê</time></span>
+<span class="pm-video-attr-numbers"><small>185.7k Temaşekirin / 485 Ecibandin</small></span>
+</div>
+<p class="pm-video-attr-desc"></p>
+<span class="pm-video-li-info">
+<span class="label label-featured">Herî li pêş</span>
+</span>
+</div>
+</li>
+<li>
+<div class="pm-li-video">
+<span class="pm-video-thumb pm-thumb-185 pm-thumb border-radius2">
+<span class="pm-video-rank">2</span>
+<span class="pm-video-li-thumb-info">
+<span class="label label-pop">Navdar</span> </span>
+<a href="geliye-ali-direj-sidekan-%e2%80%93-basure-kurdistane-31%e2%80%99e-gulane-2018_d33fa0aee.html" class="pm-thumb-fix pm-thumb-185"><span class="pm-thumb-fix-clip"><img src="uploads/thumbs/d33fa0aee-1.jpg" alt="Geliyê Alî Dirêj, Sîdekan – Başurê Kurdistanê- 31’ê Gulanê 2018" width="194"><span class="vertical-align"></span></span></a>
+</span>
+<h3 dir="ltr"><a href="geliye-ali-direj-sidekan-%e2%80%93-basure-kurdistane-31%e2%80%99e-gulane-2018_d33fa0aee.html" class="pm-title-link" title="Geliyê Alî Dirêj, Sîdekan – Başurê Kurdistanê- 31’ê Gulanê 2018">Geliyê Alî Dirêj, Sîdekan – Başurê Kurdistanê- 31’ê Gulanê 2018</a></h3>
+<div class="pm-video-attr">
+<span class="pm-video-attr-since">Dîroka Bar kirinê <time datetime="2018-06-11T08:44:37+0000" title="Monday, June 11, 2018 8:44 AM">2 sal Berê</time></span>
+<span class="pm-video-attr-numbers"><small>169.3k Temaşekirin / 4,659 Ecibandin</small></span>
+</div>
+<p class="pm-video-attr-desc"></p>
+<span class="pm-video-li-info">
+<span class="label label-featured">Herî li pêş</span>
+</span>
+</div>
+</li>
+<li>
+<div class="pm-li-video">
+<span class="pm-video-thumb pm-thumb-185 pm-thumb border-radius2">
+<span class="pm-video-rank">3</span>
+<span class="pm-video-li-thumb-info">
+<span class="label label-pop">Navdar</span> </span>
+<a href="calakiya-gire-evdil-kovi-21%e2%80%99e-gulane-2018_d4d6349c4.html" class="pm-thumb-fix pm-thumb-185"><span class="pm-thumb-fix-clip"><img src="uploads/thumbs/d4d6349c4-1.jpg" alt="Çalakiya Girê Evdil Kovi - 21’ê Gulanê 2018" width="194"><span class="vertical-align"></span></span></a>
+</span>
+<h3 dir="ltr"><a href="calakiya-gire-evdil-kovi-21%e2%80%99e-gulane-2018_d4d6349c4.html" class="pm-title-link" title="Çalakiya Girê Evdil Kovi - 21’ê Gulanê 2018">Çalakiya Girê Evdil Kovi - 21’ê Gulanê 2018</a></h3>
+<div class="pm-video-attr">
+<span class="pm-video-attr-since">Dîroka Bar kirinê <time datetime="2018-06-03T12:19:34+0000" title="Sunday, June 3, 2018 12:19 PM">2 sal Berê</time></span>
+<span class="pm-video-attr-numbers"><small>122.4k Temaşekirin / 204 Ecibandin</small></span>
+</div>
+<p class="pm-video-attr-desc"></p>
+<span class="pm-video-li-info">
+<span class="label label-featured">Herî li pêş</span>
+</span>
+</div>
+</li>
+<li>
+<div class="pm-li-video">
+<span class="pm-video-thumb pm-thumb-185 pm-thumb border-radius2">
+<span class="pm-video-rank">4</span>
+<span class="pm-video-li-thumb-info">
+<span class="label label-pop">Navdar</span> </span>
+<a href="calakiya-serekani-bazid-agiri-14%e2%80%99e-nisane-2018_e85b88425.html" class="pm-thumb-fix pm-thumb-185"><span class="pm-thumb-fix-clip"><img src="uploads/thumbs/e85b88425-1.jpg" alt="Çalakiya Serêkanî, Bazîd- Agirî, 14’ê Nisanê 2018" width="194"><span class="vertical-align"></span></span></a>
+</span>
+<h3 dir="ltr"><a href="calakiya-serekani-bazid-agiri-14%e2%80%99e-nisane-2018_e85b88425.html" class="pm-title-link" title="Çalakiya Serêkanî, Bazîd- Agirî, 14’ê Nisanê 2018">Çalakiya Serêkanî, Bazîd- Agirî, 14’ê Nisanê 2018</a></h3>
+<div class="pm-video-attr">
+<span class="pm-video-attr-since">Dîroka Bar kirinê <time datetime="2018-07-20T09:53:39+0000" title="Friday, July 20, 2018 9:53 AM">2 sal Berê</time></span>
+<span class="pm-video-attr-numbers"><small>83.9k Temaşekirin / 201 Ecibandin</small></span>
+</div>
+<p class="pm-video-attr-desc"></p>
+<span class="pm-video-li-info">
+<span class="label label-featured">Herî li pêş</span>
+</span>
+</div>
+</li>
+<li>
+<div class="pm-li-video">
+<span class="pm-video-thumb pm-thumb-185 pm-thumb border-radius2">
+<span class="pm-video-rank">5</span>
+<span class="pm-video-li-thumb-info">
+<span class="label label-pop">Navdar</span> </span>
+<a href="calakiya-sabotaje-gurbulak-bazid-agiri-20e-gulane-2018_def8959eb.html" class="pm-thumb-fix pm-thumb-185"><span class="pm-thumb-fix-clip"><img src="uploads/thumbs/def8959eb-1.jpg" alt="Çalakiya Sabotajê, Gurbûlak, Bazid- Agirî, 20'ê Gulanê 2018" width="194"><span class="vertical-align"></span></span></a>
+</span>
+<h3 dir="ltr"><a href="calakiya-sabotaje-gurbulak-bazid-agiri-20e-gulane-2018_def8959eb.html" class="pm-title-link" title="Çalakiya Sabotajê, Gurbûlak, Bazid- Agirî, 20'ê Gulanê 2018">Çalakiya Sabotajê, Gurbûlak, Bazid- Agirî, 20'ê Gulanê 2018</a></h3>
+<div class="pm-video-attr">
+<span class="pm-video-attr-since">Dîroka Bar kirinê <time datetime="2018-07-14T07:27:35+0000" title="Saturday, July 14, 2018 7:27 AM">2 sal Berê</time></span>
+<span class="pm-video-attr-numbers"><small>72.8k Temaşekirin / 196 Ecibandin</small></span>
+</div>
+<p class="pm-video-attr-desc"></p>
+ <span class="pm-video-li-info">
+<span class="label label-featured">Herî li pêş</span>
+</span>
+</div>
+</li>
+<li>
+<div class="pm-li-video">
+<span class="pm-video-thumb pm-thumb-185 pm-thumb border-radius2">
+<span class="pm-video-rank">6</span>
+<span class="pm-video-li-thumb-info">
+<span class="label label-pop">Navdar</span> </span>
+<a href="calakiya-guze-kurke-sirnex-%e2%80%93-16%e2%80%99e-nisane-2018_73df817c5.html" class="pm-thumb-fix pm-thumb-185"><span class="pm-thumb-fix-clip"><img src="uploads/thumbs/73df817c5-1.jpg" alt="Çalakiya Guzê Kurkê, Şirnex – 16’ê Nisanê 2018" width="194"><span class="vertical-align"></span></span></a>
+</span>
+<h3 dir="ltr"><a href="calakiya-guze-kurke-sirnex-%e2%80%93-16%e2%80%99e-nisane-2018_73df817c5.html" class="pm-title-link" title="Çalakiya Guzê Kurkê, Şirnex – 16’ê Nisanê 2018">Çalakiya Guzê Kurkê, Şirnex – 16’ê Nisanê 2018</a></h3>
+<div class="pm-video-attr">
+<span class="pm-video-attr-since">Dîroka Bar kirinê <time datetime="2018-06-26T08:16:46+0000" title="Tuesday, June 26, 2018 8:16 AM">2 sal Berê</time></span>
+<span class="pm-video-attr-numbers"><small>68.7k Temaşekirin / 94 Ecibandin</small></span>
+</div>
+<p class="pm-video-attr-desc"></p>
+<span class="pm-video-li-info">
+<span class="label label-featured">Herî li pêş</span>
+</span>
+</div>
+</li>
+<li>
+<div class="pm-li-video">
+<span class="pm-video-thumb pm-thumb-185 pm-thumb border-radius2">
+<span class="pm-video-rank">7</span>
+<span class="pm-video-li-thumb-info">
+<span class="label label-pop">Navdar</span> </span>
+<a href="calakiya-gerila-a-silopi_238ca6948.html" class="pm-thumb-fix pm-thumb-185"><span class="pm-thumb-fix-clip"><img src="uploads/thumbs/238ca6948-1.jpg" alt="Çalakîya Gerîla A Silopî" width="194"><span class="vertical-align"></span></span></a>
+</span>
+<h3 dir="ltr"><a href="calakiya-gerila-a-silopi_238ca6948.html" class="pm-title-link" title="Çalakîya Gerîla A Silopî">Çalakîya Gerîla A Silopî</a></h3>
+<div class="pm-video-attr">
+<span class="pm-video-attr-since">Dîroka Bar kirinê <time datetime="2019-10-02T20:10:02+0000" title="Wednesday, October 2, 2019 8:10 PM">1 sal Berê</time></span>
+<span class="pm-video-attr-numbers"><small>58.8k Temaşekirin / 2,462 Ecibandin</small></span>
+</div>
+<p class="pm-video-attr-desc"></p>
+<span class="pm-video-li-info">
+<span class="label label-featured">Herî li pêş</span>
+</span>
+</div>
+</li>
+<li>
+<div class="pm-li-video">
+<span class="pm-video-thumb pm-thumb-185 pm-thumb border-radius2">
+<span class="pm-video-rank">8</span>
+<span class="pm-video-li-thumb-info">
+<span class="label label-pop">Navdar</span> </span>
+<a href="calakiya-gire-kevorte-basure-kurdistane-16e-adare-2019_43b972609.html" class="pm-thumb-fix pm-thumb-185"><span class="pm-thumb-fix-clip"><img src="uploads/thumbs/43b972609-1.jpg" alt="Çalakiya Girê  Kevortê,  Basûrê Kurdistanê - 16ê Adarê 2019" width="194"><span class="vertical-align"></span></span></a>
+</span>
+<h3 dir="ltr"><a href="calakiya-gire-kevorte-basure-kurdistane-16e-adare-2019_43b972609.html" class="pm-title-link" title="Çalakiya Girê  Kevortê,  Basûrê Kurdistanê - 16ê Adarê 2019">Çalakiya Girê Kevortê, Basûrê Kurdistanê - 16ê Adarê 2019</a></h3>
+<div class="pm-video-attr">
+<span class="pm-video-attr-since">Dîroka Bar kirinê <time datetime="2019-03-17T12:31:43+0000" title="Sunday, March 17, 2019 12:31 PM">2 sal Berê</time></span>
+<span class="pm-video-attr-numbers"><small>55k Temaşekirin / 68 Ecibandin</small></span>
+</div>
+<p class="pm-video-attr-desc"></p>
+<span class="pm-video-li-info">
+<span class="label label-featured">Herî li pêş</span>
+</span>
+</div>
+</li>
+<li>
+<div class="pm-li-video">
+<span class="pm-video-thumb pm-thumb-185 pm-thumb border-radius2">
+<span class="pm-video-rank">9</span>
+<span class="pm-video-li-thumb-info">
+<span class="label label-pop">Navdar</span> </span>
+<a href="dimenen-destpeke-ye-calakiya-gire-lelikan-22102018_0c643b19a.html" class="pm-thumb-fix pm-thumb-185"><span class="pm-thumb-fix-clip"><img src="uploads/thumbs/0c643b19a-1.jpg" alt="Dîmenên Destpêkê Yê Çalakiya Girê Lêlîkan - 22.10.2018" width="194"><span class="vertical-align"></span></span></a>
+</span>
+<h3 dir="ltr"><a href="dimenen-destpeke-ye-calakiya-gire-lelikan-22102018_0c643b19a.html" class="pm-title-link" title="Dîmenên Destpêkê Yê Çalakiya Girê Lêlîkan - 22.10.2018">Dîmenên Destpêkê Yê Çalakiya Girê Lêlîkan - 22.10.2018</a></h3>
+<div class="pm-video-attr">
+<span class="pm-video-attr-since">Dîroka Bar kirinê <time datetime="2018-10-23T12:46:07+0000" title="Tuesday, October 23, 2018 12:46 PM">2 sal Berê</time></span>
+<span class="pm-video-attr-numbers"><small>52.7k Temaşekirin / 122 Ecibandin</small></span>
+</div>
+<p class="pm-video-attr-desc"></p>
+<span class="pm-video-li-info">
+<span class="label label-featured">Herî li pêş</span>
+</span>
+</div>
+</li>
+<li>
+<div class="pm-li-video">
+<span class="pm-video-thumb pm-thumb-185 pm-thumb border-radius2">
+<span class="pm-video-rank">10</span>
+<span class="pm-video-li-thumb-info">
+<span class="label label-pop">Navdar</span> </span>
+<a href="6-tebax-gire-leylek-2019-semzinan_ff0d21e0b.html" class="pm-thumb-fix pm-thumb-185"><span class="pm-thumb-fix-clip"><img src="uploads/thumbs/ff0d21e0b-1.jpg" alt="6 Tebax Girê Leylek u Xeregol 2019" width="194"><span class="vertical-align"></span></span></a>
+</span>
+<h3 dir="ltr"><a href="6-tebax-gire-leylek-2019-semzinan_ff0d21e0b.html" class="pm-title-link" title="6 Tebax Girê Leylek u Xeregol 2019">6 Tebax Girê Leylek u Xeregol 2019</a></h3>
+<div class="pm-video-attr">
+<span class="pm-video-attr-since">Dîroka Bar kirinê <time datetime="2019-10-02T20:06:11+0000" title="Wednesday, October 2, 2019 8:06 PM">1 sal Berê</time></span>
+<span class="pm-video-attr-numbers"><small>49.4k Temaşekirin / 84 Ecibandin</small></span>
+</div>
+<p class="pm-video-attr-desc"></p>
+<span class="pm-video-li-info">
+<span class="label label-featured">Herî li pêş</span>
+</span>
+</div>
+</li>
+</ul>
+<div class="clearfix"></div>
+<div class="pagination pagination-centered">
+<div class="clearfix"></div>
+<ul>
+<li class="disabled">
+<a href="#" onclick="return false;">«</a>
+</li>
+<li class="active">
+<a href="#" onclick="return false;">1</a>
+</li>
+<li class="">
+<a href="topvideos.html?&amp;page=2">2</a>
+</li>
+<li class="">
+<a href="topvideos.html?&amp;page=3">3</a>
+</li>
+<li class="">
+<a href="topvideos.html?&amp;page=4">4</a>
+</li>
+<li class="">
+<a href="topvideos.html?&amp;page=5">5</a>
+</li>
+<li class="disabled">
+<a href="#" onclick="return false;">...</a>
+</li>
+<li class="">
+<a href="topvideos.html?&amp;page=118">118</a>
+</li>
+<li class="">
+<a href="topvideos.html?&amp;page=119">119</a>
+</li>
+<li class="">
+<a href="topvideos.html?&amp;page=2">»</a>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+<a id="back-top" class="hidden-phone hidden-tablet" title="Bizîvire serî" style="z-index: 1000; display: none; left: 931px;">
+<i class="icon-chevron-up"></i>
+<span></span>
+</a>
+<div class="floating_ad_left sticky_ads" style="z-index: 1000;">
+</div>
+<div class="floating_ad_right sticky_ads" style="z-index: 1000;">
+</div>
+</div>
+</div>
+<footer class="footer">
+<div class="footback">
+<div class="row-fluid fixed960">
+<div class="row-fluid">
+<a href="rss.php?feed=topvideos" title="- Gerilla TV RSS" class="pm-rss-link"><i class="pm-vc-sprite ico_rss"></i> RSS</a>
+</div>
+</div>
+<div class="row-fluid fixed960">
+<div class="span8">
+<ul>
+<li><a href="index.html">Mal</a></li>
+<li><a href="contact_us.html">Peywendî</a></li>
+</ul>
+</div>
+<div class="span3">
+</div>
+<div class="span1">
+<div id="lang_selector">
+<div class="btn-group dropup lang-selector" id="lang-selector">
+<a class="btn btn-link dropdown-toggle" data-toggle="dropdown" href="#"><img src="lang/flags/ku.png" width="16" height="10" alt="Kurdi" title="Kurdi" align="texttop"> <span class="hide">Kurdi</span> <span class="caret"></span></a>
+<ul class="dropdown-menu border-radius0 pullleft">
+<li><a href="#" title="Albanian" name="2" id="lang_select_2">Albanian</a></li>
+<li><a href="#" title="Amharic" name="26" id="lang_select_26">Amharic</a></li>
+<li><a href="#" title="Arabic" name="3" id="lang_select_3">Arabic</a></li>
+<li><a href="#" title="Brazilian" name="4" id="lang_select_4">Brazilian</a></li>
+<li><a href="#" title="Bulgarian" name="5" id="lang_select_5">Bulgarian</a></li>
+<li><a href="#" title="Croatian" name="6" id="lang_select_6">Croatian</a></li>
+<li><a href="#" title="Danish" name="7" id="lang_select_7">Danish</a></li>
+<li><a href="#" title="Deutsch" name="8" id="lang_select_8">Deutsch</a></li>
+<li><a href="#" title="English" name="1" id="lang_select_1">English</a></li>
+<li><a href="#" title="Farsi" name="25" id="lang_select_25">Farsi</a></li>
+<li><a href="#" title="Français" name="9" id="lang_select_9">Français</a></li>
+<li><a href="#" title="Georgian" name="10" id="lang_select_10">Georgian</a></li>
+<li><a href="#" title="Greek" name="27" id="lang_select_27">Greek</a></li>
+<li><a href="#" title="Hebrew" name="23" id="lang_select_23">Hebrew</a></li>
+<li><a href="#" title="Italian" name="11" id="lang_select_11">Italian</a></li>
+<li><a href="#" title="Lithuanian" name="12" id="lang_select_12">Lithuanian</a></li>
+<li><a href="#" title="Nederlands" name="13" id="lang_select_13">Nederlands</a></li>
+<li><a href="#" title="Polish" name="14" id="lang_select_14">Polish</a></li>
+<li><a href="#" title="Portuguese" name="15" id="lang_select_15">Portuguese</a></li>
+<li><a href="#" title="Română" name="16" id="lang_select_16">Română</a></li>
+<li><a href="#" title="Russian" name="17" id="lang_select_17">Russian</a></li>
+<li><a href="#" title="Serbian" name="18" id="lang_select_18">Serbian</a></li>
+<li><a href="#" title="Slovak" name="19" id="lang_select_19">Slovak</a></li>
+<li><a href="#" title="Spanish" name="20" id="lang_select_20">Spanish</a></li>
+<li><a href="#" title="Swedish" name="21" id="lang_select_21">Swedish</a></li>
+<li><a href="#" title="Türkçe" name="22" id="lang_select_22">Türkçe</a></li>
+ <li><a href="#" title="Thai" name="24" id="lang_select_24">Thai</a></li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+</footer>
+<div id="lights-overlay" style="height: 1292px; display: none;"></div>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js" type="text/javascript"></script>
+<script src="templates/ruby/js/bootstrap.min.js" type="text/javascript"></script>
+<script src="templates/ruby/js/jquery.cookee.js" type="text/javascript"></script>
+<script src="templates/ruby/js/jquery.validate.min.js" type="text/javascript"></script>
+<script src="templates/ruby/js/theme.js" type="text/javascript"></script>
+<script src="templates/ruby/js/jquery.maskedinput-1.3.min.js" type="text/javascript"></script>
+<script src="templates/ruby/js/jquery.tagsinput.min.js" type="text/javascript"></script>
+<script src="templates/ruby/js/jquery-scrolltofixed-min.js" type="text/javascript"></script>
+<script src="templates/ruby/js/jquery.uniform.min.js" type="text/javascript"></script>
+<script src="templates/ruby/js/jquery.ba-dotimeout.min.js" type="text/javascript"></script>
+<script type="text/javascript" src="js/bootstrap-notify.min.js"></script>
+<script src="js/melody.dev.js" type="text/javascript"></script>
+<script src="templates/ruby/js/melody.dev.js?v2" type="text/javascript"></script>
+<script src="templates/ruby/js/lightbox.min.js" type="text/javascript"></script>
+<script type="text/javascript">
+// Global settings for notifications
+$.notifyDefaults({
+	// settings
+	element: 'body',
+	position: null,
+	type: "info",
+	allow_dismiss: true,
+	newest_on_top: true,
+	showProgressbar: false,
+	placement: {
+		from: "top", // top, bottom
+		align: "right" // left, right, center
+	},
+	offset: {
+	    x: 20,
+	    y: 100
+	  },
+	spacing: 10,
+	z_index: 1031,
+	delay: 10000,
+	timer: 1000,
+	url_target: '_blank',
+	mouse_over: null,
+	animate: {
+		enter: 'animated fadeInDown',//'animated fadeIn',
+		exit: 'animated fadeOutUpBig',//'animated fadeOut'
+	},
+	onShow: null,
+	onShown: null,
+	onClose: null,
+	onClosed: null,
+	template: '<div data-notify="container" class="growl alert alert-{0}" role="alert">' +
+				'<button type="button" aria-hidden="true" class="close" data-notify="dismiss">&times;</button>' +
+				'<span data-notify="icon"></span> ' +
+				'<span data-notify="title">{1}</span> ' +
+				'<span data-notify="message">{2}</span>' +
+				'<div class="progress" data-notify="progressbar">' +
+					'<div class="progress-bar progress-bar-{0}" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 0%;"></div>' +
+				'</div>' +
+				'<a href="{3}" target="{4}" data-notify="url"></a>' +
+			'</div>',
+	PM_exitAnimationTimeout: 0 // PHP Melody custom settings
+});
+</script>
+
+<script type="text/javascript">
+    
+        $('#header-login-form').on('shown', function () {
+            $('.hocusfocus').focus();
+        });
+    
+    </script>
+<script src="templates/ruby/js/jquery.cropit.js" type="text/javascript"></script>
+<script type="text/javascript"> 
+$(function() {
+	var cropit_avatar_notify = null;
+	var cropit_cover_notify = null;
+	var cropit_notify_type = 'info';
+	
+	// Avatar
+	$('.pm-profile-avatar-pic').cropit({
+		smallImage: 'allow',
+		// width: 180, 
+		// height: 180,
+		width: 120,
+		height: 120,
+		preview: '.pm-profile-avatar-preview',
+		onImageLoading: function(){
+			cropit_avatar_notify = $.notify({message: pm_lang.please_wait}, {type: cropit_notify_type});
+		},
+		onImageLoaded: function() {
+			cropit_avatar_notify.close();
+		},
+		onImageError: function(){
+			cropit_avatar_notify.close();
+		}
+	});
+
+	$('#btn-edit-avatar').click(function() {
+	  $('#cropit-avatar-input').click();
+	  $('#cropit-avatar-form').css('visibility', 'visible');
+	  $('.cropit-image-preview').removeClass('animated fadeIn');
+	});
+
+	$('.btn-cancel-avatar').click(function() {
+		$('.pm-profile-avatar-pic .cropit-image-preview').removeClass('cropit-image-loaded').addClass('animated fadeIn');
+		$('#cropit-avatar-form').css('visibility', 'hidden');
+		return false;
+	});
+
+	$('form#cropit-avatar-form').submit(function() {
+		
+		var image_data = $('.pm-profile-avatar-pic').cropit('export', {
+			type: 'image/jpeg',
+			quality: .9,
+			fillBg: '#333'
+		});
+		
+		// Move cropped image data to hidden input
+		$('.hidden-avatar-data-img').val(image_data);
+		
+		$.ajax({
+			url: MELODYURL2 + "/ajax.php",
+		    type: "POST",
+			dataType: "json",
+		    data: $('#cropit-avatar-form').serialize(),
+			beforeSend: function(jqXHR, settings) {
+				// clean error message container
+				//cropit_avatar_notify.close();
+				$.notifyClose();
+				cropit_avatar_notify = $.notify({message: pm_lang.swfupload_status_uploading}, {type: cropit_notify_type});
+			},
+		})
+		.done(function(data){
+			cropit_avatar_notify.close();
+			if (data.success) { 
+				// hide form action buttons 
+				$('#cropit-avatar-form').css('visibility', 'hidden');
+				
+				// reset background with uploaded image 
+				$('.pm-profile-avatar-pic .cropit-image-preview img').attr('src', data.file_url);
+				
+				// stop image movement ability
+				$('.pm-profile-avatar-pic .cropit-image-preview').addClass('animated fadeIn');
+				// timeout required to allow time for the uploaded image to load before removing the current image obj (and avoid a image-swapping 'glitch')
+				setTimeout(function(){
+					$('.pm-profile-avatar-pic .cropit-image-preview').removeClass('cropit-image-loaded')
+				}, 700);
+				
+				// unload selected image to let the user re-select the same image
+				$('.pm-profile-avatar-pic input.cropit-image-input')[0].value = null;
+			}
+			cropit_avatar_notify = $.notify({message: data.msg}, {type: data.alert_type});
+		});
+
+		return false;
+	});
+	
+	var cropit_cover_height = parseInt($('.pm-profile-cover-preview').attr('data-cropit-height'));
+	if ( ! cropit_cover_height) {
+		cropit_cover_height = 200;
+	}
+		
+	// Cover
+	$('.pm-profile-cover-preview').cropit({
+		smallImage: 'allow',
+		height: cropit_cover_height,
+		onImageLoading: function(){
+			cropit_cover_notify = $.notify({message: pm_lang.please_wait}, {type: cropit_notify_type});
+		},
+		onImageLoaded: function() {
+			cropit_cover_notify.close();
+		},
+		onImageError: function(){
+			cropit_cover_notify.close();
+		}
+	});
+
+	$('#btn-edit-cover').click(function() {
+	  $('#cropit-cover-input').click();
+	  $('#cropit-cover-form').css('visibility', 'visible');
+	  $('.cropit-image-preview').removeClass('animated fadeIn');
+	});
+
+	$('.btn-cancel').click(function() {
+		$('.pm-profile-cover-preview .cropit-image-preview').removeClass('cropit-image-loaded').addClass('animated fadeIn');
+		$('#cropit-cover-form').css('visibility', 'hidden');
+		return false;
+	});
+
+    $('form#cropit-cover-form').submit(function() {
+		
+		var image_data = $('.pm-profile-cover-preview').cropit('export', {
+			type: 'image/jpeg',
+			quality: .9,
+			fillBg: '#333'
+		});
+		
+		// Move cropped image data to hidden input
+		$('.hidden-cover-data-img').val(image_data);
+		
+		$.ajax({
+			url: MELODYURL2 + "/ajax.php",
+		    type: "POST",
+			dataType: "json",
+		    data: $('#cropit-cover-form').serialize(),
+			beforeSend: function(jqXHR, settings) {
+				// clean error message container
+				//cropit_cover_notify.close();
+				$.notifyClose();
+				cropit_cover_notify = $.notify({message: pm_lang.swfupload_status_uploading}, {type: cropit_notify_type});
+			},
+		})
+		.done(function(data){
+			cropit_cover_notify.close();
+			if (data.success) { 
+				// hide form action buttons 
+				$('#cropit-cover-form').css('visibility', 'hidden');
+				
+				// reset background with uploaded image 
+				$('.pm-profile-cover-preview .cropit-image-preview img').attr('src', data.file_url);
+				
+				// stop image movement ability
+				$('.pm-profile-cover-preview .cropit-image-preview').addClass('animated fadeIn');
+				// timeout required to allow time for the uploaded image to load before removing the current image obj (and avoid a image-swapping 'glitch')
+				setTimeout(function(){
+					$('.pm-profile-cover-preview .cropit-image-preview').removeClass('cropit-image-loaded')
+				}, 700);
+				
+				// unload selected image to let the user re-select the same image
+				$('.pm-profile-cover-preview input.cropit-image-input')[0].value = null;
+			}
+			cropit_cover_notify = $.notify({message: data.msg}, {type: data.alert_type});
+		});
+
+		return false;
+	});
+});
+</script>
+
+ <div id="lightboxOverlay" style="display: none;"></div><div id="lightbox" style="display: none;"><div class="lb-outerContainer"><div class="lb-container"><img class="lb-image"><div class="lb-nav"><a class="lb-prev"></a><a class="lb-next"></a></div><div class="lb-loader"><a class="lb-cancel"><img src="templates/ruby/img/lb-loading.gif"></a></div></div></div><div class="lb-dataContainer"><div class="lb-data"><div class="lb-details"><span class="lb-caption"></span><span class="lb-number"></span></div><div class="lb-closeContainer"><a class="lb-close"><img src="templates/ruby/img/lb-close.png"></a></div></div></div></div></body></html>
